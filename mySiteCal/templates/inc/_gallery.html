@@ -1,0 +1,18 @@
+<section id="gallery" class="bgGrey">
+    <div class="container">
+        <div class="title">
+            <h1>Gallery</h1>
+        </div>
+
+        <div class="row">
+            {% for item in gallery %}
+            <div class="col-md-4 p-0">
+                <a href="{{ item.img }}" class="portfolio-box">
+                    <img class="img-responsive " src="{{ item.img }}" alt='{{ item.title }}'>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

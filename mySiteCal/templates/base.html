@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cal</title>
+    <meta name="description" content="Multipurpose HTML Theme">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{% static 'images/logo/logo.png' %}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/YTPlayer.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/owl.carousel.css" /> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'js/revolutionslider/css/settings.css' %}" />
+    <link rel="stylesheet" href="{% static 'js/revolutionslider/css/navigation.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/hVCarousel.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/simple-lightbox.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link href=" https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css" rel="stylesheet"
+        type="text/css" />
+
+    <style>
+        section {
+            border: none !important;
+        }
+    </style>
+
+</head>
+
+<body data-target="#mainNav">
+
+    <!-- Pageloader -->
+    <!-- <div class="page-loader">
+        <div class="loader">
+            <div class='loader-style-1 panelLoad'>
+                <div class='cube-face cube-face-front'>E</div>
+                <div class='cube-face cube-face-back'>R</div>
+                <div class='cube-face cube-face-left'>X</div>
+                <div class='cube-face cube-face-right'>O</div>
+                <div class='cube-face cube-face-bottom'>T</div>
+                <div class='cube-face cube-face-top'>T</div>
+            </div>
+            <span class="cube-face">CAL</span>
+        </div>
+    </div> -->
+
+    <!-- /loader -->
+    <!-- /Page-loader -->
+
+
+    <!-- Navigation -->
+    {% include 'inc/_nav.html' %}
+    <!--/#Navigation-->
+
+    <!-- Revolution slider -->
+    {% include 'inc/_slider.html' %}
+    <!-- /#Revolution slider -->
+
+    <!--/#Services-->
+    {% include 'inc/_services.html' %}
+    <!--/#Services-->
+
+    <!--/#About-->
+    {% include 'inc/_about.html' %}
+    <!--/#About-->
+
+    <!-- Appointments -->
+    {% include 'inc/_appointments.html' %}
+    <!-- Appointments -->
+
+    <!-- Gallery -->
+    {% include 'inc/_gallery.html' %}
+    <!-- Gallery -->
+
+    <!-- Faq -->
+    {% include 'inc/_faq.html' %}
+    <!-- Faq -->
+
+    <!-- Reviews -->
+    {% include 'inc/_review.html' %}
+    <!-- Reviews -->
+
+
+    <!-- Contact -->
+    {% include 'inc/_contact.html' %}
+    <!-- Contact -->
+
+
+    <!-- Footer -->
+    {% include 'inc/_footer.html' %}
+    <!-- Footer -->
+
+    <!-- support -->
+    {% include 'inc/_support.html' %}
+    <!-- support -->
+
+
+    <!-- Back to top -->
+    <a href="#" id="back-to-top" title="Back to top"><i class="ti-angle-up"></i></a>
+    <!-- /Back to top -->
+
+    <!-- Java Script -->
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.fitvids.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+    <!-- <script type="text/javascript" src="{% static js/owl.carousel.min.js"></script> -->
+    <script type="text/javascript" src="{% static 'js/wow.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.appear.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/revolutionslider/js/jquery.themepunch.revolution.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/revolutionslider/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/revolutionslider/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script type="text/javascript"
+        src="{% static 'js/revolutionslider/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/email.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/simple-lightbox.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/hVCarousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slidesjs/3.0/jquery.slides.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJt-BduR0mI4LbIR_jYDXe9okZNaJVLUY&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+</body>
+
+</html>

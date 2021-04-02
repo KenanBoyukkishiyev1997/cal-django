@@ -1,0 +1,37 @@
+<section id="faq">
+    <div class="container">
+        <div class="title">
+            <h1>Faq</h1>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h2 class="text-left" style="color: #223E6E; font-weight: bold; margin-bottom: 50px;">MOST RECENT ASKED
+                QUESTIONS.</h2>
+            <div class="accordion" id="accordionFAQ">
+                {% for item in faq %}
+
+                <div class="card">
+                    <div class="card-header" id="heading4">
+                        <button class="buttonFaq collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <span>
+                                {{ item.title }}
+                            </span>
+                        </button>
+                    </div>
+
+                    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionFAQ">
+                        <div class="card-body">
+                            <div style="padding: 0rem 0 1rem;">
+                                <hr style="margin:auto">
+                            </div>
+                            {{item.content}}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+            <!-- /accordion -->
+        </div>
+    </div>
+</section>

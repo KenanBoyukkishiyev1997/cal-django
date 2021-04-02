@@ -1,0 +1,69 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 100px 0 0;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 40%;
+  right: 0px;
+}
+.bUoWVj {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 100% !important;
+}
+  
+
+.buttons button#prev {
+  position: absolute;
+  top: 40%;
+  left: 0px;
+}
+
+.buttons button {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  font-family: Arial, Baskerville, monospace;
+  font-size: 2rem;
+  padding: 13px 15px;
+  outline: none;
+  vertical-align: middle;
+  border: 1px solid #000;
+}
+
+.buttons button:hover {
+  color: #333;
+}
+
+/* Backgorund Images */
+
+.slide:first-child {
+  background: url("../images/carusel/bg.jpg") no-repeat;
+  background-size: cover;
+}
+.slide:nth-child(2) {
+  background: url("../images/carusel/bg.jpg") no-repeat ;
+  background-size: cover;
+}

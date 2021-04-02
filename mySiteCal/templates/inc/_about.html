@@ -1,0 +1,40 @@
+<section id="about">
+    <div class="container">
+        <div class="row about_flex">
+            <div class="col-md-6 col-sm-8">
+                <div class="about">
+
+                    <h2 class="about-title">
+                        {{about_item.title}}
+                    </h2>
+
+                    <div class="about-text">
+                        <p>
+                          
+                            {{about_item.content}}
+                        </p>
+
+
+                        <a href="#" class="form-control form-submit  border-control"
+                            style="margin-bottom: 20px; margin-left: auto; display: flex; align-items: center; justify-content: center;">
+                            Make appointment
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="col-md-6 col-sm-4  ">
+                <img class="about_img"  
+                " src="{{ about_item.img.url }}" alt="{{about_item.title}}">
+            </div>
+        </div>
+    </div>
+
+
+
+
+</section>
